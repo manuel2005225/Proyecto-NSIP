@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nosotros</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #3498db;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+        section {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        h1 {
+            color: #ffffff;
+        }
+
+        .corporation {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            max-width: 300px;
+        }
+
+        footer {
+            background-color: #3498db;
+            text-align: center;
+            padding: 5px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            color: #fff;
+        }
+
+        .corporation img {
+            max-width: 100%;
+        }
+
+        .back-button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Empresas</h1>
+    </header>
+    <section>
+        <div class="corporation">
+            <img src="https://logospng.org/download/windows-11/logo-windows-11-icon-1024.png" alt="Miembro 1">
+            <h2>WINDOWS 11</h2>
+            <button class="back-button" onclick="window.location.href='info microsoft.html'">sobre la pagina</button>
+        </div>
+
+        <div class="corporation">
+            <img src="https://cdn-icons-png.flaticon.com/512/2/2235.png" alt="Miembro 2">
+            <h2>macOS</h2>
+            <button class="back-button" onclick="window.location.href='info apple.html'">sobre la pagina</button>
+        </div>
+        <button class="back-button" onclick="window.location.href='i.html'">Volver a la pagina principal</button>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Nuestra Empresa. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
