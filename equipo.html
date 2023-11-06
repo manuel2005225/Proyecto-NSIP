@@ -25,7 +25,7 @@
         }
 
         h1 {
-            color: #3498db;
+            color: #ffffff;
         }
 
         .team-member {
@@ -58,6 +58,17 @@
             border: none;
             cursor: pointer;
         }
+        li {
+            text-align: left;
+        }
+        .infoList {
+            display: none;
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
 
     </style>
 </head>
@@ -71,27 +82,48 @@
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQswp7b3AFk_uwh_qbZ-9Dd47OamsTaI-8Vcw&usqp=CAU" alt="Miembro 1">
             <h2>Nicolas Santiago</h2>
             <p>Rol: Desarrollador Frontend</p>
-            <button class="back-button" onclick="window.location.href='i.html'">Volver</button>
+            <button onclick="toggleList('list1')">informacion de desarrollador</button>
+            <ul id="list1" class="infoList">
+                <li>Información 1.1</li>
+                <li>Información 1.2</li>
+                <li>Información 1.3</li>
+            </ul>
         </div>
 
         <div class="team-member">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQswp7b3AFk_uwh_qbZ-9Dd47OamsTaI-8Vcw&usqp=CAU" alt="Miembro 2">
             <h2>Manuel Orlando</h2>
             <p>Rol: Desarrollador Backend</p>
-            <button class="back-button" onclick="window.location.href='i.html'">Volver</button>
+            <button onclick="toggleList('list2')">informacion de desarrollador</button>
+            <ul id="list2" class="infoList">
+                <li>Información 2.1</li>
+                <li>Información 2.2</li>
+                <li>Información 2.3</li>
+            </ul>
         </div>
 
         <div class="team-member">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQswp7b3AFk_uwh_qbZ-9Dd47OamsTaI-8Vcw&usqp=CAU" alt="Miembro 3">
             <h2>Andres joya</h2>
             <p>Rol: Diseñador UI/UX</p>
-            <button class="back-button" onclick="window.location.href='i.html'">Volver</button>
+            <button onclick="toggleList('list3')">informacion de desarrollador</button>
+            <ul id="list3" class="infoList">
+                <li>Estudiante de ingenieria en sistemas</li>
+                <li>universidad: UNAB</li>
+            </ul>
         </div>
-        <!-- Agrega más miembros del equipo con la misma estructura si es necesario -->
     </section>
-
-    <footer>
-        <p>&copy; 2023 Nuestra Empresa. Todos los derechos reservados.</p>
-    </footer>
+    <script>
+        function toggleList(id) {
+            var list = document.getElementById(id);
+            if (list.style.display === "none") {
+                list.style.display = "block";
+            } else {
+                list.style.display = "none";
+            }
+        }
+    </script>
+    <section><button class="back-button" onclick="window.location.href='i.html'">Volver</button></section>
+    
 </body>
 </html>

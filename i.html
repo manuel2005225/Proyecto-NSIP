@@ -13,26 +13,30 @@
         }
 
         header {
-            background-color: #3498db;
-            padding: 20px;
-            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px; /* Ajusta el relleno según tu preferencia */
+            background-color:#3498db; /* Cambia el color de fondo según tu preferencia */
+            color: #fff; /* Cambia el color de texto según tu preferencia */
         }
 
         /* Estilo para el logo */
         .logo {
-            max-width: 200px;
-            display: block;
-            margin: 0 auto; /* Centra la imagen horizontalmente */
+            max-width: 100px; /* Ajusta el ancho máximo de tu logo según tu preferencia */
+            height: auto;
         }
 
         nav ul {
-            list-style-type: none;
-            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
         }
 
         nav ul li {
             display: inline;
-            margin-right: 20px;
+            margin: 3%;
         }
 
         /* Cambiamos el color de la opción "Acerca de Nosotros" en el menú */
@@ -40,34 +44,45 @@
             color: #fff;
             text-decoration: none;
         }
-
-        section {
-            padding: 20px;
+        section{
+            padding: 2px;
         }
 
         footer {
             background-color: #3498db;
-            text-align: center;
+            text-align:center;
             padding: 10px;
             width: 100%;
             color: #fff;
+            bottom: 0;
+            position: absolute;
+        }
+        h1 {
+            color: #ffffff;
+            margin: 2%;
         }
 
-        h1, h2 {
+        h2 {
             color: #3498db;
+            margin: 2%;
         }
 
         ul {
             list-style-type: disc;
         }
+        p {
+            margin-left: 3%;
+        }
+        
     </style>
     <title>NSIP</title>
 </head>
 <body>
+    
     <header>
         <!-- Agregamos el logo y mejoramos su estilo -->
         <img src="lol.jpg" alt="Logo de NSIP" class="logo">
-        <h1>Información Importante</h1>
+        <h1>Network Security Information Page</h1>
         <nav>
             <ul>
                 <li><a href="#">Inicio</a></li>

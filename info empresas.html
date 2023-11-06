@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Nosotros</title>
     <style>
+            .corporation img {
+            max-width: 100%;
+            height: auto;
+            }
+
+
         body {
             font-family: Arial, sans-serif;
             background-color: #f7f7f7;
@@ -16,6 +23,7 @@
             text-align: center;
             color: #fff;
         }
+
         section {
             padding: 20px;
             display: flex;
@@ -49,7 +57,13 @@
         .corporation img {
             max-width: 100%;
         }
-
+        .button{
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
         .back-button {
             background-color: #3498db;
             color: #fff;
@@ -57,9 +71,9 @@
             border: none;
             cursor: pointer;
         }
-
     </style>
 </head>
+
 <body>
     <header>
         <h1>Empresas</h1>
@@ -68,19 +82,24 @@
         <div class="corporation">
             <img src="https://logospng.org/download/windows-11/logo-windows-11-icon-1024.png" alt="Miembro 1">
             <h2>WINDOWS 11</h2>
-            <button class="back-button" onclick="window.location.href='info microsoft.html'">sobre la pagina</button>
+            <button class="button" onclick="window.location.href='info microsoft.html'">sobre la pagina</button>
         </div>
 
         <div class="corporation">
             <img src="https://cdn-icons-png.flaticon.com/512/2/2235.png" alt="Miembro 2">
             <h2>macOS</h2>
-            <button class="back-button" onclick="window.location.href='info apple.html'">sobre la pagina</button>
+            <button class="button" onclick="window.location.href='info apple.html'">sobre la pagina</button>
         </div>
+
+        <div class="corporation">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/1200px-Tux.svg.png" alt="Miembro 3">
+            <h2>LINUX</h2>
+            <button class="button" onclick="window.location.href='info LINUX.html'">sobre la pagina</button>
+        </div>
+    </section>
+    <section>
         <button class="back-button" onclick="window.location.href='i.html'">Volver a la pagina principal</button>
     </section>
-    
-    <footer>
-        <p>&copy; 2023 Nuestra Empresa. Todos los derechos reservados.</p>
-    </footer>
 </body>
+
 </html>
